@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(151, 76, 76);
+    color:white;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    color:black;
+}
+
+#left, #right{
+    width: 50%;
+    padding: 10px;
+    background-color: rgb(236, 231, 207);
+}
+
+#left{
+    display:flex;
+    flex-direction: column;
+    border-right: solid black 1px;
+}
+
+#formas{
+    height: 50%;
+    overflow: auto;
+    border-bottom: 1px black solid;
+}
+
+#comentariosAutor{
+    height:50%;
+}
+
+form, form>label{
+    display: flex;
+    flex-direction: column;
+}
+
+form button{
+    width: 20%;
+}
+
+.item{
+    color:rgb(87, 87, 87);
+    border-bottom: solid black 1px;
+}
+
+.item> p{
+    padding-left: 10px;
+    
+}
+.item>.fecha{
+    font-style: italic;font-size: 12px;
+}
+
+.item>.autor{
+    text-align: right;
+    font-weight: bold;
+}
+
+.item>.id{
+    text-align: right;
+    font-size: 10px;
+    color: grey;
+}
+
+textarea, input{
+    background-color: rgb(233, 231, 231);
+}
+
+form{
+    padding:20px;
+    border-bottom: 1px grey solid;
+    font-size: 20px;
+
+}
+
+form>*{
+    font-size: 14px;
+    padding:10px;
+}
+
+button{
+    text-align: center;
+    margin-left: auto;
+}
+
+
+

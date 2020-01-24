@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header><h1>Blog de comentarios</h1></header>
+      <main>
+      <div id='left'>
+      <div id="formas">
+        <form id = "formaNuevo">
+          Nuevo comentario
+          <label>
+            Titulo: 
+            <input type="text" placeholder="Titulo" id='tituloNuevo'>
+          </label>
+          <label>
+            Contenido: <textarea  placeholder="Contenido" id='contenidoNuevo' rows='5' cols="30"></textarea>
+          </label>
+          <label>
+            Autor: <input type='text' placeholder="Autor" id="autorNuevo">
+          </label>
+          <button type="submit">Publicar</button>
+        </form>
+        <form id = "formaActualizar">
+          Actualizar comentario
+          <label>
+            ID: <input type="text" placeholder="ID" id="id">
+          </label>
+          <label>
+            Titulo: 
+            <input type="text" placeholder="Titulo" id='titulo'>
+          </label>
+          <label>
+            Contenido: <textarea  placeholder="Contenido" id='contenido' rows='5' cols="30"></textarea>
+          </label>
+          <label>
+            Autor: <input type='text' placeholder="Autor" id="autor">
+          </label>
+          <button type="submit">Actualizar</button>
+        </form>
+        <form id= "formaRemover">
+          Remover comentario
+          <label>
+            ID: <input type="text" placeholder="ID" id="idRemover">
+          </label>
+          <button type="submit">Remover</button>
+        </form>
+        <form id="formaAutor">
+          Buscar por autor
+          <label>
+            Autor: <input type="text" placeholder="Autor" id="autorBuscar">
+          </label>
+          <button type="submit" >Buscar</button>
+        </form>
+      </div>
+      <div class ='comentarios' id="comentariosAutor"></div>
+      </div>
+      
+<div id="right">
+    <div class="comentarios" id="comentarios">
+
+      </div>
+    </div>
+  </main>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>     
+    <script src="./js/index.js"></script>
+  </body>
+</html>
