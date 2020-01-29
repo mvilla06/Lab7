@@ -83,9 +83,9 @@ function updateComment(){
 
             let url = '/blog-api/actualizar-comentario/' + $('#id').val();
             let id = $("#id").val();
-            let titulo = $("#titulo").val();
-            let autor = $("#autor").val();
-            let contenido = $("#contenido").val();
+            let titulo = $("#titulo").val() ||undefined;
+            let autor = $("#autor").val()||undefined;
+            let contenido = $("#contenido").val()||undefined;
             let date =  new Date();
 
             let obj = {
@@ -95,7 +95,7 @@ function updateComment(){
                 contenido:contenido ,
                 fecha: date.toISOString()
             }
-            console.log(obj)
+            //console.log(obj)
             
             $.ajax({
                 url: url,
