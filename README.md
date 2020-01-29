@@ -1,1 +1,1 @@
-"Laboratorio 6 - Blog CRUD"
+"Laboratorio 7 - Modelo y Deplyment"
